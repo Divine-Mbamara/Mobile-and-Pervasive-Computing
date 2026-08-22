@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#717171"
+        android:backgroundTint="#85F2F2F2"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="633dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/favoriteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Favorites"
+            android:textStyle="bold"
+            android:textColor="#555556"
+            android:backgroundTint="#70E1B8"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search"
+            android:textStyle="bold"
+            android:textColor="#555556"
+            android:backgroundTint="#70E1B8"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</LinearLayout>

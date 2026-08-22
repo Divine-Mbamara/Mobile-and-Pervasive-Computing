@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/system_accent2_600"
+    android:gravity="center"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather Report"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"/>
+
+
+    <!-- Toronto-->
+    <LinearLayout
+        android:id="@+id/torontoBtn"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/toronto"
+        android:clickable="true">
+
+        <!--Left - Icon & Condition-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/iconToronto"
+                android:layout_width="70dp"
+                android:layout_height="75dp"
+                android:src="@drawable/p_hold_t"
+                android:layout_gravity="center" />
+
+            <!--Condition-->
+            <TextView
+                android:id="@+id/condToronto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="condition"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="#0B0B0B"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <!-- Center - City name -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp">
+
+            <!--Location-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toronto"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+
+
+        <!-- Right - Degree -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp">
+
+            <!--Degree in Celsius-->
+            <TextView
+                android:id="@+id/degToronto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4°C"
+                android:textSize="57sp"
+                android:textStyle="italic"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- Montreal -->
+    <LinearLayout
+        android:id="@+id/montrealBtn"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/montreal"
+        android:clickable="true">
+
+        <!--Left - Icon & Condition-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/iconMontreal"
+                android:layout_width="70dp"
+                android:layout_height="75dp"
+                android:src="@drawable/p_hold_m"
+                android:layout_gravity="center" />
+
+            <!--Condition-->
+            <TextView
+                android:id="@+id/condMontreal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="condition"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="#0B0B0B"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <!-- Center - City name -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp">
+
+            <!--Location-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montreal"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+
+
+        <!-- Right - Degree -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp">
+
+            <!--Degree in Celsius-->
+            <TextView
+                android:id="@+id/degMontreal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4°C"
+                android:textSize="57sp"
+                android:textStyle="italic"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- Vancouver -->
+    <LinearLayout
+        android:id="@+id/vancouverBtn"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/vancouver"
+        android:clickable="true">
+
+        <!--Left - Icon & Condition-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/iconVancouver"
+                android:layout_width="70dp"
+                android:layout_height="75dp"
+                android:src="@drawable/p_hold_v"
+                android:layout_gravity="center" />
+
+            <!--Condition-->
+            <TextView
+                android:id="@+id/condVancouver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="condition"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="#0B0B0B"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <!-- Center - City name -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp">
+
+            <!--Location-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vancouver"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+
+
+        <!-- Right - Degree -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp">
+
+            <!--Degree in Celsius-->
+            <TextView
+                android:id="@+id/degVancouver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4°C"
+                android:textSize="57sp"
+                android:textStyle="italic"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
